@@ -1,0 +1,27 @@
+<div class="footer-container">
+    <div class="box">
+        <p class="follow">FOLLOW US</p>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+        <p class="newsletter">NEWSLETTER</p>
+        <form (ngSubmit)="subscribeForm()">
+            <label for="email"></label>
+            <input [(ngModel)]="subscribe.email" type="text" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="box">
+        <a routerLink="/contact"><p>Contact Us</p></a>
+        <a routerLink="/about"><p>About us</p></a>
+        <a href="#"><p>Help</p></a>
+        <a href="#"><p>Privacy</p></a>
+    </div>
+    <div class="box">
+        <a href="#"><p>User Agreement</p></a>
+        <a href="#"><p>Press</p></a>
+        <a href="#"><p>Gift Card</p></a>
+    </div>
+</div>

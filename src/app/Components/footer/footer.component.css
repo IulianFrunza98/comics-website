@@ -1,0 +1,90 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #f0f0f0; 
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+.follow {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.footer-container a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+.box {
+    line-height: 30px;
+}
+
+.social-media a {
+    color: #000;
+    padding-inline: 10px;
+    font-size: 20px;
+}
+
+.social-media a i {
+    transition: all 0.5s;
+}
+
+.social-media a i:hover {
+    transform: scale(1.5);
+}
+
+form button {
+    margin-left: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 3px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color:#131313;
+}
+
+form input {
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+
+form input:focus::placeholder {
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .footer-container .box {
+        line-height: 60px;
+    }
+
+    .newsletter, form {
+        display: none;
+    }
+
+    .follow {
+        font-weight: bold;
+    }
+
+    i {
+        font-size: 25px;
+    }
+}

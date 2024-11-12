@@ -1,0 +1,58 @@
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.name {
+    font-size: 13px;
+    width: 200px;
+    color: #000;
+    margin: 0 auto;
+}
+
+.price {
+    color: green;
+}
+
+.buy-btn {
+    background-image: linear-gradient(to left, #D31027 0%, #EA384D 51%, #D31027 100%);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+
+.buy-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

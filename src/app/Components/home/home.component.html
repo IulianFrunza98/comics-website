@@ -1,0 +1,18 @@
+<h1>Comics</h1>
+<ul>
+    <li *ngFor="let comic of comics">
+        <a routerLink="/comic/{{comic.id}}">
+            <img src="{{comic.imageUrl}}" alt="comic">
+            <div class="content">
+                <div class="name">
+                    {{comic.name}} - {{comic.year}}
+                </div>
+                <div class="price">
+                    {{comic.price}} $
+                </div>
+            </div>
+            <a href="#" class="buy-btn">Buy</a>
+        </a>
+    </li>
+</ul>
+<app-footer></app-footer>

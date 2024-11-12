@@ -1,0 +1,21 @@
+<nav class="navbar" [ngClass]="{ 'open': isOpen }">
+    <div class="logo">
+        <a routerLink="/">Comics.</a>
+    </div>
+    <div class="search">
+        <app-search></app-search>
+    </div>
+    <div class="hamburger" (click)="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <ul class="nav-link">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/categories">Categories</a></li>
+        <li><a routerLink="/cart-page">Cart</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/register">Register</a></li>
+        <li><a routerLink="/about">About us</a></li>
+    </ul>
+</nav>

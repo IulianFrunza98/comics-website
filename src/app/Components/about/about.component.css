@@ -1,0 +1,20 @@
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+}
+
+.image img {
+    border-radius: 5px;
+}
+
+.about-us h1 {
+    text-align: center;
+}
+
+.about-us p {
+    padding: 10px;
+    text-align:justify;
+    line-height: 30px;
+}

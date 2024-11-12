@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="comicImage">
+        <img src="{{comic.imageUrl}}" alt="comic.name" width="300px">
+    </div>
+    <div class="details">
+        <div class="header">
+            <div class="name">
+                {{comic.name}}
+            </div>
+            <div class="year">
+                Year: {{comic.year}}
+            </div>
+            <div class="pages">
+                Number of pages: {{comic.numberOfPages}}
+            </div>
+            <div class="price">
+                Price: {{comic.price}} $
+            </div>
+            <button (click)="addToCart()" class="buy-btn">Buy</button>
+            <div class="description">
+                <h2>Description</h2>
+                    {{comic.description}}
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

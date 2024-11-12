@@ -1,0 +1,13 @@
+<h1>Brands</h1>
+<ul>
+    <li *ngFor="let category of categories">
+        <a [routerLink]="['/comics', category.brandName]">
+            <img src="{{category.imageURL}}" alt="">
+            <div class="brandName">
+                {{category.brandName}}
+            </div>
+        </a>
+    </li>
+</ul>
+<app-footer></app-footer>
+

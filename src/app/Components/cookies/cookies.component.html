@@ -1,0 +1,7 @@
+<div class="cookie" *ngIf="cookieAccepted === null">
+    <p>
+        This site uses cookies to enhance the user experience. Please accept the use of cookies to continue.
+    </p>
+    <button (click)="acceptCookies()">Accept</button>
+    <button (click)="rejectCookies()">Reject</button>
+</div>

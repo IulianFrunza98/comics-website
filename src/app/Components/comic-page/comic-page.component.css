@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 100px;
+    margin-bottom: 55px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+img {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.details {
+    text-align: left;
+    line-height: 30px;
+}
+
+.description h2 {
+    padding: 20px;
+}
+
+.buy-btn {
+    background-image: linear-gradient(to left, #D31027 0%, #EA384D 51%, #D31027 100%);
+    margin-top: 10px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    text-decoration: none;
+}
+
+
+.buy-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .details {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .buy-btn {
+        margin: 5px auto;
+    }
+
+    .comicImage {
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    .name {
+        line-height: 50px;
+    }
+}
